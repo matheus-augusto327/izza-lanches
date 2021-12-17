@@ -9,6 +9,7 @@
 
 body {
     font-family: Montserrat;
+    background-color: #fff;
 }
 
 a, p {
@@ -79,9 +80,9 @@ nav a:hover {
     fill:   var(--red-theme);
 }
 
-/* ------------------------------------------------- SECTION MAIN ------------------------------------------------- */
+/* ------------------------------------------------- SECTION INITIAL ------------------------------------------------- */
 
-section {
+section.initial-content {
     background-image: url(../assets/background-burgers-home-top.jpg);
     height: 700px;
     background-position: 50% 0px;
@@ -119,6 +120,44 @@ section {
     font-weight: bold;
 }
 
-.teste-excluir {
-    height: 1000px;
+/* ------------------------------------------------- SECTION FOOD TYPES ------------------------------------------------- */
+
+section.food-types {
+    width: 100%;
+    height: 380px;
+    background-color: var(--red-theme);
+}
+
+.food-types-content {
+    width: 60%;
+    height: 100%;
+    margin: auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.food-type-card {
+    width: 200px;
+    height: 300px;
+    margin: auto;
+    align-self: flex-start;
+    text-align: center;
+}
+
+.food-type-card img {
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.food-type-card h4 {
+    color: white;
+    margin-top: 10px;
+}
+
+.food-type-card p {
+    color: #f6f8fa;
+    margin-top: 10px;
 }
