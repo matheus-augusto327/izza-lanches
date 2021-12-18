@@ -21,6 +21,10 @@ a {
     color: white;
 }
 
+p {
+    opacity: 0.6;
+}
+
 .width-limiter {
     width: 60%;
 }
@@ -140,11 +144,12 @@ section.food-types {
 }
 
 .food-type-card {
-    width: 200px;
+    width: 210px;
     height: 300px;
     margin: auto;
     align-self: flex-start;
     text-align: center;
+    box-sizing: border-box;
 }
 
 .food-type-card img {
@@ -160,4 +165,114 @@ section.food-types {
 .food-type-card p {
     color: #f6f8fa;
     margin-top: 10px;
+}
+
+/* ------------------------------------------------- FOOD VITRINE ------------------------------------------------- */
+
+section.vitrine {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+
+    border: 3em solid #f6f8fa;
+    background-color: white;
+}
+
+.vitrine-container {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+
+.vitrine-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+
+    margin-top: 100px;
+}
+
+.vitrine-title span {
+    background-color: var(--red-theme);
+    font-weight: bold;
+    color: white;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.vitrine-title h1 {
+    font-size: 48px;
+    color: #262626;
+    margin-bottom: 15px;;
+}
+
+.vitrine-title p {
+    font-size: 20px;
+    color: #333333;
+    margin-bottom: 70px;
+}
+
+.vitrine-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 50px;
+
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.vitrine-card {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.vitrine-card img {
+    width: 300px;
+}
+
+.vitrine-card h4 {
+    margin-bottom: 10px;
+}
+
+.vitrine-container .menu-button {
+    width: 250px;
+    height: 50px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+
+    color: var(--red-theme);
+    font-weight: bold;
+
+    background-color: white;
+    border: 2px solid var(--red-theme);
+
+    cursor: pointer;
+    -webkit-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+}
+
+.vitrine-container .menu-button:hover {
+    color: white;
+    background-color: var(--red-theme);
+}
+
+/* ------------------------------------------------- INFO SECTION ------------------------------------------------- */
+
+section.info-section {
+    background-color: #262626;
+}
+
+.local-info .contact span {
+    background-color: var(--red-theme);
+    font-weight: bold;
+    color: white;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.local-info .contact h1 {
+    color: white;
 }
