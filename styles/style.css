@@ -1,5 +1,5 @@
 :root {
-    --red-theme: #FF0000;
+    --red-theme: #DA291C;
 }
 
 * {
@@ -19,10 +19,6 @@ a, p {
 a {
     text-decoration: none;
     color: white;
-}
-
-p {
-    opacity: 0.6;
 }
 
 .width-limiter {
@@ -147,9 +143,22 @@ section.food-types {
     width: 210px;
     height: 300px;
     margin: auto;
+    padding: 5px;
+
     align-self: flex-start;
     text-align: center;
     box-sizing: border-box;
+
+    background-color: #f6f8fa;
+    border-radius: 7px;
+
+    -webkit-transition: .35s ease-in-out;
+    transition: .35s ease-in-out;
+}
+
+.food-type-card:hover {
+    box-shadow: 0px 30px 18px -8px rgba(0, 0, 0,0.2);
+    transform: scale(1.10, 1.10);
 }
 
 .food-type-card img {
@@ -158,12 +167,12 @@ section.food-types {
 }
 
 .food-type-card h4 {
-    color: white;
+    color: #262626;
     margin-top: 10px;
 }
 
 .food-type-card p {
-    color: #f6f8fa;
+    color: #262626;
     margin-top: 10px;
 }
 
@@ -175,7 +184,7 @@ section.vitrine {
     box-sizing: border-box;
 
     border: 3em solid #f6f8fa;
-    background-color: white;
+    background-color: #FFC72C;
 }
 
 .vitrine-container {
@@ -210,7 +219,7 @@ section.vitrine {
 
 .vitrine-title p {
     font-size: 20px;
-    color: #333333;
+    color: #262626;
     margin-bottom: 70px;
 }
 
@@ -234,7 +243,14 @@ section.vitrine {
 }
 
 .vitrine-card h4 {
+    font-size: 24px;
     margin-bottom: 10px;
+    color: #262626;
+}
+
+.vitrine-card p {
+    font-size: 16px;
+    color: #262626;
 }
 
 .vitrine-container .menu-button {
@@ -243,11 +259,12 @@ section.vitrine {
     margin-top: 25px;
     margin-bottom: 50px;
 
-    color: var(--red-theme);
+    color: #FFC72C;
     font-weight: bold;
 
-    background-color: white;
+    background-color: var(--red-theme);
     border: 2px solid var(--red-theme);
+    border-radius: 10px;
 
     cursor: pointer;
     -webkit-transition: .5s ease-in-out;
@@ -255,7 +272,7 @@ section.vitrine {
 }
 
 .vitrine-container .menu-button:hover {
-    color: white;
+    color: #FFC72C;
     background-color: var(--red-theme);
 }
 
@@ -264,6 +281,22 @@ section.vitrine {
 section.info-section {
     background-color: #262626;
 }
+
+.local-info {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-contaier1 {
+    width: 100%;
+}
+
 
 .local-info .contact span {
     background-color: var(--red-theme);
