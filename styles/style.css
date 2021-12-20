@@ -1,5 +1,6 @@
 :root {
     --red-theme: #DA291C;
+    --yellow-theme: #FFC72C;
 }
 
 * {
@@ -82,7 +83,7 @@ nav a:hover {
 
 /* ------------------------------------------------- SECTION INITIAL ------------------------------------------------- */
 
-section.initial-content {
+section#initial-content {
     background-image: url(../assets/background-burgers-home-top.jpg);
     height: 700px;
     background-position: 50% 0px;
@@ -122,7 +123,7 @@ section.initial-content {
 
 /* ------------------------------------------------- SECTION FOOD TYPES ------------------------------------------------- */
 
-section.food-types {
+section#food-types {
     width: 100%;
     height: 380px;
     background-color: var(--red-theme);
@@ -178,13 +179,13 @@ section.food-types {
 
 /* ------------------------------------------------- FOOD VITRINE ------------------------------------------------- */
 
-section.vitrine {
+section#vitrine {
     width: 100%;
     height: 100%;
     box-sizing: border-box;
 
     border: 3em solid #f6f8fa;
-    background-color: #FFC72C;
+    background-color: var(--yellow-theme);
 }
 
 .vitrine-container {
@@ -259,7 +260,7 @@ section.vitrine {
     margin-top: 25px;
     margin-bottom: 50px;
 
-    color: #FFC72C;
+    color: var(--yellow-theme);
     font-weight: bold;
 
     background-color: var(--red-theme);
@@ -272,40 +273,73 @@ section.vitrine {
 }
 
 .vitrine-container .menu-button:hover {
-    color: #FFC72C;
-    background-color: var(--red-theme);
+    color: var(--red-theme);
+    background-color: var(--yellow-theme);
 }
 
 /* ------------------------------------------------- INFO SECTION ------------------------------------------------- */
 
-section.info-section {
+section#info-section {
     background-color: #262626;
 }
 
-.local-info {
+.info {
     width: 100%;
     height: 100%;
     margin: auto;
 
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-container-1, .info-container-2 {
+    width: 100%;
+    height: 100%;
+}
+
+.info-container-1 {
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
 
-.info-contaier1 {
-    width: 100%;
+.info-container-1 .contact {
+    margin-bottom: 20px;
 }
 
-
-.local-info .contact span {
+.info-container-1 .contact span {
     background-color: var(--red-theme);
     font-weight: bold;
     color: white;
     padding: 5px;
-    margin-bottom: 10px;
 }
 
-.local-info .contact h1 {
+.info-container-1 .contact h1 {
+    font-size: 36px;
     color: white;
+    margin-top: 20px;
+}
+
+.info-container-1 .time {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-container-1 .time svg {
+    fill: var(--red-theme);
+    margin-right: 15px;
+}
+
+.info-container-1 .time .days {
+    color: white;
+    line-height: 2;
+}
+
+.info-container-2 iframe{
+    width: 100%;
 }
