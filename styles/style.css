@@ -189,7 +189,7 @@ section#vitrine {
 }
 
 .vitrine-container {
-    width: 60%;
+    width: 80%;
     margin: auto;
     text-align: center;
 }
@@ -228,7 +228,6 @@ section#vitrine {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr 1fr;
-    gap: 50px;
 
     box-sizing: border-box;
     align-items: center;
@@ -236,6 +235,7 @@ section#vitrine {
 
 .vitrine-card {
     text-align: center;
+    margin: auto;
     margin-bottom: 70px;
 }
 
@@ -342,4 +342,92 @@ section#info-section {
 
 .info-container-2 iframe{
     width: 100%;
+}
+
+/* ------------------------------------------------- RESPONSIVE ------------------------------------------------- */
+
+@media (max-width: 1500px) {
+    .header-container, .section-content, .food-types-content, .vitrine-container {
+        width: 80%;
+    }
+
+    .vitrine-items {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 1100px) {
+    .header-container, .section-content, .food-types-content, .vitrine-container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .header-container, .section-content, .food-types-content, .vitrine-container {
+        width: 95%;
+    }
+
+}
+
+@media (max-width: 400px) {
+
+    section#initial-content {
+        background-image: url(../assets/background-burgers-home-top.jpg);
+        background-size: cover;
+        height: 600px;
+    }
+
+    .section-content {
+        top: 220px;
+    }
+
+    .section-content span.section-title {
+        font-size: 16px;
+    }
+    
+    .section-content span.section-subtitle {
+        font-size: 36px;
+    }
+    
+    section#food-types {
+        height: 100%;
+    }
+
+    .food-types-content {
+        flex-direction: column;
+    }
+
+    .food-type-card {
+        margin: 10px auto 10px auto;
+    }
+
+    section#vitrine {
+        border: 1em solid #f6f8fa;
+    }
+
+    .vitrine-title {
+        margin-top: 50px;
+    }
+
+    .vitrine-items {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
+
+    .vitrine-card img {
+        width: 200px;
+    }
+
+    .vitrine-container .menu-button {
+        margin-top: 0px;
+    }
+
+    .info {
+        flex-direction: column;
+    }
+
+    .info-container-1 {
+        margin: 30px auto 30px auto;
+    }
 }

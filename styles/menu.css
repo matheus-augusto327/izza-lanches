@@ -1,0 +1,122 @@
+:root {
+    --red-theme: #DA291C;
+    --yellow-theme: #FFC72C;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Montserrat;
+    background-color: #fff;
+}
+
+a, p {
+    font-size: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.width-limiter {
+    width: 60%;
+}
+
+/* ------------------------------------------------- HEADER ------------------------------------------------- */
+
+header {
+    background-color: transparent;
+}
+
+.header-container {
+    width: 60%;
+    height: 100px;
+
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-container {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    padding-left: 50px;
+}
+
+nav a:hover {
+    transition-duration: 0.5s;
+    color: var(--red-theme);
+}
+
+.social-media-container a {
+    padding-left: 10px;
+}
+
+.social-media-container svg {
+    fill: white;
+}
+
+.social-media-container svg:hover {
+    transition-duration: 0.5s;
+    fill:   var(--red-theme);
+}
+
+/* ------------------------------------------------- SECTION INITIAL ------------------------------------------------- */
+
+section#initial-content {
+    background-image: url(../assets/background-burgers-home-top.jpg);
+    height: 700px;
+    background-position: 50% 0px;
+}
+
+.section-content {
+    width: 60%;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 300px;
+    text-align: left;
+}
+
+.section-content .title-container, .section-content .subtitle-container {
+    max-width: 900px;
+    margin-bottom: 15px;
+}
+
+.section-content span {
+    color: white;
+}
+
+.section-content span.section-title {
+    background-color: var(--red-theme);
+    font-size: 26px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.section-content span.section-subtitle {
+    font-size: 58px;
+    font-weight: bold;
+}
