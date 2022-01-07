@@ -1,6 +1,6 @@
-/* ------------------------------------------------- FOOD VITRINE ------------------------------------------------- */
+/* ------------------------------------------------- MENU ------------------------------------------------- */
 
-section#vitrine {
+section#menu {
     width: 100%;
     height: 100%;
     box-sizing: border-box;
@@ -9,13 +9,13 @@ section#vitrine {
     background-color: var(--yellow-theme);
 }
 
-.vitrine-container {
-    width: 80%;
+.menu-container {
+    width: 70%;
     margin: auto;
     text-align: center;
 }
 
-.vitrine-title {
+.menu-title {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -25,7 +25,7 @@ section#vitrine {
     margin-top: 100px;
 }
 
-.vitrine-title span {
+.menu-title span {
     background-color: var(--red-theme);
     font-weight: bold;
     color: white;
@@ -33,40 +33,40 @@ section#vitrine {
     margin-bottom: 10px;
 }
 
-.vitrine-title h1 {
+.menu-title h1 {
     font-size: 48px;
     color: #262626;
     margin-bottom: 15px;;
 }
 
-.vitrine-title p {
+.menu-title p {
     font-size: 20px;
     color: #262626;
     margin-bottom: 70px;
 }
 
-.vitrine-items {
+.menu-items {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 0px 50px;
 
     box-sizing: border-box;
     align-items: center;
+
+    margin-bottom: 70px;
 }
 
 /* ------------------------------------------------- MENU ------------------------------------------------- */
 
-.vitrine-row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.menu-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
 
-    padding: 10px;
-    border-radius: 10px;
-}
+    padding: 20px 0 20px 0;
+    border-bottom: 1px dashed #262626;
 
-.img-row img {
-    width: 100px;
+    box-sizing: border-box;
 }
 
 .text-row {
@@ -74,20 +74,29 @@ section#vitrine {
     text-align: left;
 }
 
-.text-row h4 {
+.text-row h4, .price-row {
+    color: #262626;
     font-size: 19px;
-    margin-top: 6px;
+    margin: 0;
 }
 
 .text-row p {
     font-size: 14px;
+    color: #262626;
 }
 
 .price-row {
-    display: flex;
-    align-items: center;
+    width: 100%;
+    text-align: right;
+}
 
-    font-size: 19px;
+.description-row {
+    text-align: left;
+    
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
 }
 
 /* ------------------------------------------------- RESPONSIVE ------------------------------------------------- */

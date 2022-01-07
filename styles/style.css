@@ -49,7 +49,7 @@ header {
     align-items: center;
 }
 
-.menu-container {
+.nav-container {
     display: flex;
     align-items: center;
 }
@@ -275,42 +275,6 @@ section#vitrine {
 .vitrine-container .menu-button:hover {
     color: var(--red-theme);
     background-color: var(--yellow-theme);
-}
-
-/* ------------------------------------------------- MENU ------------------------------------------------- */
-
-.vitrine-row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
-    padding: 10px;
-    border-radius: 10px;
-}
-
-.img-row img {
-    width: 100px;
-}
-
-.text-row {
-    line-height: 1.8;
-    text-align: left;
-}
-
-.text-row h4 {
-    font-size: 19px;
-    margin-top: 6px;
-}
-
-.text-row p {
-    font-size: 14px;
-}
-
-.price-row {
-    display: flex;
-    align-items: center;
-
-    font-size: 19px;
 }
 
 /* ------------------------------------------------- INFO SECTION ------------------------------------------------- */
