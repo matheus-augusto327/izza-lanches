@@ -85,6 +85,7 @@ nav a:hover {
 
 section#initial-content {
     background-image: url(../assets/background-burgers-home-top.jpg);
+    background-size: cover;
     height: 700px;
     background-position: 50% 0px;
 }
