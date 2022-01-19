@@ -129,7 +129,7 @@ section#menu {
 
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
 
     section#initial-content {
         background-image: url(../assets/background-burgers-home-top.jpg);
@@ -148,38 +148,13 @@ section#menu {
     .section-content span.section-subtitle {
         font-size: 36px;
     }
-    
-    section#food-types {
-        height: 100%;
-    }
 
-    .food-types-content {
-        flex-direction: column;
-    }
-
-    .food-type-card {
-        margin: 10px auto 10px auto;
-    }
-
-    section#vitrine {
-        border: 1em solid #f6f8fa;
-    }
-
-    .vitrine-title {
+    .menu-title {
         margin-top: 50px;
     }
 
-    .vitrine-items {
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(6, 1fr);
-    }
-
-    .vitrine-card img {
-        width: 200px;
-    }
-
-    .vitrine-container .menu-button {
-        margin-top: 0px;
+    section#menu {
+        border: 1em solid #f6f8fa;
     }
 
     .info {

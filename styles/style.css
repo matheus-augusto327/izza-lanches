@@ -97,7 +97,7 @@ section#initial-content {
     margin-right: auto;
     left: 0;
     right: 0;
-    top: 300px;
+    top: 250px;
     text-align: left;
 }
 
@@ -120,6 +120,27 @@ section#initial-content {
 .section-content span.section-subtitle {
     font-size: 58px;
     font-weight: bold;
+}
+
+.section-content .menu-button {
+    width: 250px;
+    height: 50px;
+    margin-top: 10px;
+
+    color: white;
+    font-weight: bold;
+
+    background-color: var(--red-theme);
+    border: 2px solid var(--red-theme);
+
+    cursor: pointer;
+    -webkit-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+}
+
+.section-content .menu-button:hover {
+    color: var(--red-theme);
+    background-color: transparent;
 }
 
 /* ------------------------------------------------- SECTION FOOD TYPES ------------------------------------------------- */
@@ -266,7 +287,6 @@ section#vitrine {
 
     background-color: var(--red-theme);
     border: 2px solid var(--red-theme);
-    border-radius: 10px;
 
     cursor: pointer;
     -webkit-transition: .5s ease-in-out;
@@ -371,7 +391,7 @@ section#info-section {
 
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
 
     section#initial-content {
         background-image: url(../assets/background-burgers-home-top.jpg);
@@ -389,6 +409,11 @@ section#info-section {
     
     .section-content span.section-subtitle {
         font-size: 36px;
+    }
+
+    .section-content .menu-button {
+        font-size: 16px;
+        width: 200px;
     }
     
     section#food-types {
