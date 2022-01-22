@@ -1,18 +1,16 @@
-topBtn = document.getElementById("topBtn")
+topBtn = document.querySelector(".topBtn")
 
 window.onscroll = function() {scrollFunction()}
 
 function scrollFunction() {
     if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-        topBtn.style.display = "block"
+        topBtn.classList.add("showBtn")
     } else {
-        topBtn.style.display = "none"
+        topBtn.classList.remove("showBtn")
     }
 }
 
 function topFunction() {
-    document.body.scrollTop() {
-        document.body.scrollTop = 0
-        document.documentElement.scrollTop = 0
-    }
+    document.body.scrollTop = 0
+    document.documentElement.scrollTop = 0
 }

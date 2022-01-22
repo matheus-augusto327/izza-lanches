@@ -143,11 +143,10 @@ section#initial-content {
     background-color: transparent;
 }
 
-#topBtn {
+.topBtn {
     width: 50px;
     height: 50px;
     border: none;
-    border-radius: 50%;
 
     background-color: var(--red-theme);
     color: white;
@@ -158,8 +157,23 @@ section#initial-content {
     justify-content: center;
 
     position: fixed;
-    bottom: 50px;
-    right: 50px;
+    bottom: 20px;
+    right: 70px;
+    z-index: 9999;
+    transform: translateY(100px);
+    opacity: 0;
+
+    transition: all .5s ease;
+    cursor: pointer;
+}
+
+.topBtn:hover {
+    transform: scale(1.10, 1.10);
+}
+
+.showBtn {
+    opacity: 1;
+    transform: translateY(0);
 }
 /* ------------------------------------------------- SECTION FOOD TYPES ------------------------------------------------- */
 
