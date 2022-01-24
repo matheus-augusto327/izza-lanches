@@ -446,6 +446,10 @@ section#info-section {
         font-size: 16px;
         width: 200px;
     }
+
+    .topBtn {
+        right: 25px;
+    }
     
     section#food-types {
         height: 100%;
