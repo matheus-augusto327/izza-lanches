@@ -284,17 +284,18 @@ section#vitrine {
     grid-template-rows: 1fr 1fr;
 
     box-sizing: border-box;
-    align-items: center;
 }
 
 .vitrine-card {
-    text-align: center;
+    width: 300px;
     margin: auto;
     margin-bottom: 70px;
+    text-align: center;
 }
 
 .vitrine-card img {
     width: 300px;
+    height: 300px;
 }
 
 .vitrine-card h4 {
