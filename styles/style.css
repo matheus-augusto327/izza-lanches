@@ -288,33 +288,39 @@ section#vitrine {
 
 .vitrine-card {
     width: 300px;
+    height: 90%;
     margin: auto;
     margin-bottom: 70px;
     text-align: center;
+
+    background-color: #f6f8fa;
+    border-radius: 7px
 }
 
 .vitrine-card img {
     width: 300px;
-    height: 300px;
+    border-radius: 7px 7px 0 0;
 }
 
 .vitrine-card h4 {
     font-size: 24px;
-    margin-bottom: 10px;
+    margin: 20px auto 10px auto;
     color: #262626;
 }
 
 .vitrine-card p {
     font-size: 16px;
     color: #262626;
+    padding: 15px;
 }
 
 .vitrine-container .menu-button {
-    width: 250px;
+    width: 300px;
     height: 50px;
     margin-top: 25px;
     margin-bottom: 50px;
 
+    font-size: 16px;
     color: var(--yellow-theme);
     font-weight: bold;
 
@@ -475,10 +481,6 @@ section#info-section {
     .vitrine-items {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(6, 1fr);
-    }
-
-    .vitrine-card img {
-        width: 200px;
     }
 
     .vitrine-container .menu-button {
