@@ -431,6 +431,14 @@ section#info-section {
 
 @media (max-width: 450px) {
 
+    .nav-container ul {
+        display: flex;
+    }
+
+    .nav-container ul li{
+        padding-left: 10px;
+    }
+
     section#initial-content {
         background-image: url(../assets/background-burgers-home-top.jpg);
         background-size: cover;
