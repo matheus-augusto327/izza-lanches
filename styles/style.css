@@ -143,6 +143,31 @@ section#initial-content {
     background-color: transparent;
 }
 
+.whatsappBtn {
+    width: 50px;
+    height: 50px;
+    border: none;
+
+    background: transparent;
+    font-size: 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: fixed;
+    bottom: 20px;
+    right: 70px;
+    z-index: 9999;
+
+    transition: all .5s ease;
+    cursor: pointer;
+}
+
+.whatsappBtn:hover {
+    transform: scale(1.10, 1.10);
+}
+
 .topBtn {
     width: 50px;
     height: 50px;
@@ -158,7 +183,7 @@ section#initial-content {
 
     position: fixed;
     bottom: 20px;
-    right: 70px;
+    left: 70px;
     z-index: 9999;
     transform: translateY(100px);
     opacity: 0;
@@ -463,7 +488,11 @@ section#info-section {
     }
 
     .topBtn {
-        right: 25px;
+        display: none;
+    }
+
+    .whatsappBtn {
+        right: 20px;
     }
     
     section#food-types {
